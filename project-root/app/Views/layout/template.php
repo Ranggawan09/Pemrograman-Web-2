@@ -22,15 +22,16 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" aria-current="books" href="/books/">Daftar Buku</a>
                     <a class="nav-link" aria-current="about" href="/page/about">About</a>
                     <a class="nav-link" aria-current="contact" href="/page/contact">Contact</a>
-                    <a class="nav-link disabled" aria-disabled="true" href="/">Disabled</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <?= $this->renderSection('content'); ?>
+    <link rel="stylesheet" href="/css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
