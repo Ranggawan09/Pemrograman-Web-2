@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Mar 2024 pada 12.19
+-- Waktu pembuatan: 06 Bulan Mei 2024 pada 14.30
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -44,7 +44,8 @@ CREATE TABLE `books` (
 
 INSERT INTO `books` (`id`, `judul`, `slug`, `penulis`, `penerbit`, `sampul`, `created_at`, `updated_at`) VALUES
 (1, 'Abu Nawas', 'abunawas', 'Abu Nawas', 'Gramedia', 'AbuNawas.jpg', '2024-03-26 13:59:59', '2024-03-26 13:59:59'),
-(2, 'Al-Khwarizmi', 'al', 'Corona Brezina', 'Gramedia', 'Al-Khwarizmi.jpg', '2024-03-26 22:31:34', '2024-03-26 22:31:34');
+(2, 'Al-Khwarizmi', 'al', 'Corona Brezina', 'Gramedia', 'Al-Khwarizmi.jpg', '2024-03-26 22:31:34', '2024-03-26 22:31:34'),
+(7, 'Awan', 'awan', 'Bulan', 'Bintang', 'Semesta', '2024-05-06 12:22:32', '2024-05-06 12:22:32');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +65,7 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT untuk tabel `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
