@@ -17,7 +17,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row mb-3">
                     <label for="penulis" class="col-sm-2 col-form-label">Penulis</label>
                     <div class="col-sm-10">
@@ -40,18 +39,21 @@
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <label for="Sampul" class="col-sm-2 col-form-label">Sampul</label>
-                    <input type="file"
-                        class="form-control <?= ($validation->hasError('sampul')) ? 'is-invalid' : ''; ?>" id="sampul"
-                        name="sampul" onchange="previewImg()">
-                    <div class="invalid-feedback">
-                        <?= $validation->getError('sampul'); ?>;
+                <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
+                    <div class="col-sm-2">
+                        <img src="/img/no-cover.jpg" class="img-thumbnail img-preview">
                     </div>
-                    <label class="input-group-text" for="Sampul">Upload</label>
+                    <div class="col-sm-8">
+                        <input type="file" class="form-control <?= ($validation->hasError('sampul')) ? 'is-invalid' :
+                         ''; ?>" value="<?= old('sampul'); ?>" name="sampul" id="sampul" onchange="previewImg()"  >
+                        <div class="invalid-feedback">
+                            <?= $validation->getError('sampul'); ?>
+                        </div>
+                        <label for="sampul" class="input-group-text" >Upload</label>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah Data</button>
         </div>
-
         </form>
     </div>
 </div>

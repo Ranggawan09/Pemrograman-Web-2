@@ -59,19 +59,9 @@
                         <label for="sampul" class="input-group-text" >Upload</label>
                     </div>
                 </div>
-                    <button type="submit" class="btn btn-primary">Ubah Data</button>
-                    </div>
-                </div>
-            </form>
-            
+                    <button type="submit" class="btn btn-primary">Ubah Data</button>   
         </div>
+            </form>
     </div>
 </div>
-<?php if ($validation->hasError('sampul')): ?>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        alert('<?= $validation->getError('sampul'); ?>');
-    });
-</script>
-<?php endif; ?>
 <?= $this->endSection(); ?>
