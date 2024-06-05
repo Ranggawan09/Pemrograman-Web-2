@@ -67,6 +67,5 @@ function previewImg() {
         }
     }
 }
-
 </script>
 </html>
